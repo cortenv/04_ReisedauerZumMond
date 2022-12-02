@@ -6,17 +6,31 @@ import javafx.scene.control.*;
 public class HelloController {
 
     @FXML
-    private RadioButton indays;
+    private RadioButton indays; {
+    }
 
     @FXML
     private RadioButton inHours;
 
     @FXML
+    private TextField textFieldDuration;
+
+    @FXML
     private TextField TextFieldSpeed;
 
     @FXML
-    private Button timeMath;
+    private void ButtonMath() {
+        double speedKmh = Double.parseDouble(TextFieldSpeed.getText());
+        double result = 0.0;
 
-    @FXML
-    private TextField textFieldDuration;
+        Mondreise mondreise = new Mondreise(speedKmh);
+
+        if (indays.isSelected() == true) {
+            result = mondreise.getTravelDurationDays();
+        } else {
+            result = mondreise.getTravelDurationHours();
+        }
+            textFieldDuration.setText(Double.toString(result));
+    }
+
 }
