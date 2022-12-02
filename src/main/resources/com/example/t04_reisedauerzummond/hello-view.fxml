@@ -5,17 +5,21 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t04_reisedauerzummond.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t04_reisedauerzummond.HelloController">
    <children>
-      <Label layoutX="192.0" layoutY="37.0" prefHeight="17.0" prefWidth="190.0" text="Reisedauer zum Mond berrechnen" />
-      <RadioButton fx:id="indays" layoutX="205.0" layoutY="93.0" mnemonicParsing="false" text="in Tagen" />
-      <RadioButton fx:id="inHours" layoutX="300.0" layoutY="93.0" mnemonicParsing="false" text="in Stunden" />
-      <Label layoutX="155.0" layoutY="134.0" text="Geschwindigkeit in km/h" />
-      <TextField fx:id="textFieldDuration" layoutX="276.0" layoutY="238.0" />
-      <Button fx:id="timeMath" layoutX="206.0" layoutY="175.0" mnemonicParsing="false" text="Reisedauer berechnen" />
-      <Label layoutX="149.0" layoutY="242.0" text="Ausgabe Reisedauer" />
-      <TextField fx:id="TextFieldSpeed" layoutX="293.0" layoutY="130.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label layoutX="20.0" layoutY="14.0" prefHeight="17.0" prefWidth="190.0" text="Reisedauer zum Mond berrechnen" />
+      <RadioButton fx:id="indays" layoutX="58.0" layoutY="63.0" mnemonicParsing="false" text="in Tagen" />
+      <RadioButton fx:id="inHours" layoutX="178.0" layoutY="63.0" mnemonicParsing="false" text="in Stunden" />
+      <Label layoutX="26.0" layoutY="110.0" text="Geschwindigkeit in km/h" />
+      <TextField fx:id="textFieldDuration" layoutX="137.0" layoutY="207.0" prefHeight="25.0" prefWidth="146.0" />
+      <Button fx:id="timeMath" layoutX="43.0" layoutY="165.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="215.0" text="Reisedauer berechnen" />
+      <Label layoutX="20.0" layoutY="211.0" text="Ausgabe Reisedauer" />
+      <TextField fx:id="TextFieldSpeed" layoutX="170.0" layoutY="106.0" prefHeight="25.0" prefWidth="98.0" />
+      <Line endX="171.0" layoutX="115.0" layoutY="32.0" startX="-100.0" />
+      <Line endX="-100.0" endY="170.0" layoutX="114.0" layoutY="33.0" startX="-100.0" />
+      <Line endX="-100.0" endY="170.0" layoutX="387.0" layoutY="33.0" startX="-100.0" />
+      <Line endX="171.0" layoutX="115.0" layoutY="203.0" startX="-100.0" />
    </children>
 </AnchorPane>
